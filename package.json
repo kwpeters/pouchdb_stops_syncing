@@ -4,6 +4,7 @@
   "description": "Reproduces a PouchDB issue",
   "main": "index.js",
   "scripts": {
+    "start-db-server": "./node_modules/.bin/pouchdb-server --port 3030 --dir ./dbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/kwpeters/pouchdb_stops_syncing/issues"
   },
-  "homepage": "https://github.com/kwpeters/pouchdb_stops_syncing#readme"
+  "homepage": "https://github.com/kwpeters/pouchdb_stops_syncing#readme",
+  "dependencies": {
+    "pouchdb-browser": "7.1.1",
+    "pouchdb-server": "4.1.0"
+  }
 }
