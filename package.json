@@ -1,0 +1,22 @@
+{
+  "name": "pouchdb_stops_syncing",
+  "version": "1.0.0",
+  "description": "Reproduces a PouchDB issue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwpeters/pouchdb_stops_syncing.git"
+  },
+  "keywords": [
+    "pouchdb"
+  ],
+  "author": "Kevin Peters <kwpeters@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwpeters/pouchdb_stops_syncing/issues"
+  },
+  "homepage": "https://github.com/kwpeters/pouchdb_stops_syncing#readme"
+}
