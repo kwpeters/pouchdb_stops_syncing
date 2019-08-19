@@ -8,10 +8,6 @@
         {
             "route": ["/lib"],
             "dir": "node_modules"
-        },
-        {
-            "route": ["/lib2"],
-            "dir": "lib2"
         }
     ],
     "browser": ["safari"]
