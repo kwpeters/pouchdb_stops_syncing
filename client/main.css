@@ -1,0 +1,8 @@
+.log-message-container {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.log-message-container * {
+    font-family: monospace;
+}
