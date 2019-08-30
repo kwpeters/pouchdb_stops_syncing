@@ -32,7 +32,7 @@ function log(...args) {
 
 
 function remoteDbUrl(dbName) {
-    const DB_SERVER_URL = "http://localhost:3026";
+    const DB_SERVER_URL = "http://localhost:5984";
     return `${DB_SERVER_URL}/${dbName}`;
 }
 
@@ -72,7 +72,7 @@ function updateDocInRemoteDb(syncInfo) {
 
 
 function main() {
-    const syncInfo = setupSyncPair("myTestDb");
+    const syncInfo = setupSyncPair("mytestdb");
 
     syncInfo.sync
     .on("change", function onChange(info) {

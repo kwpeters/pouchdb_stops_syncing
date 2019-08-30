@@ -6,8 +6,8 @@
   "scripts": {
     "reset-safari": "rm -rf ~/Library/Safari/Databases/___IndexedDB/http_localhost_8000/",
     "reset": "rm -rf dbs && mkdir dbs && npm run reset-safari",
-    "start-db-server": "./node_modules/.bin/pouchdb-server --port 3026 --dir ./dbs",
-    "start-client": "node_modules/.bin/lite-server -c bs-config.json"
+    "start-db-server": "./node_modules/.bin/pouchdb-server --port 5984 --dir ./dbs",
+    "start-http-server": "node server/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/kwpeters/pouchdb_stops_syncing#readme",
   "dependencies": {
-    "lite-server": "2.5.4",
+    "express": "4.17.1",
     "pouchdb": "7.1.1",
     "pouchdb-server": "4.1.0"
   }
