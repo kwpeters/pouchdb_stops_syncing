@@ -113,7 +113,3 @@ function main() {
 window.addEventListener('DOMContentLoaded', (event) => {
     main();
 });
-
-
-
-
