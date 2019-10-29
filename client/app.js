@@ -40,7 +40,24 @@ function remoteDbUrl(dbName) {
 function setupSyncPair(dbName) {
     const localDb = new PouchDB(dbName);
     const remoteDb = new PouchDB(remoteDbUrl(dbName));
-    const sync = PouchDB.sync(localDb, remoteDb, {live: true, retry: true});
+
+    //
+    // Try disabling the sync heartbeat.  Neither of the following seems to
+    // change the sync's ability to resume in my testing.
+    //
+
+    // const sync = PouchDB.sync(localDb,
+    //                           remoteDb,
+    //                           {live: true, retry: true, heartbeat: false});
+
+    const sync = PouchDB.sync(localDb,
+                              remoteDb,
+                              {
+                                  live: true,
+                                  retry: true,
+                                  push: {heartbeat: false},
+                                  pull: {heartbeat: false}
+                              });
 
     return {remoteDb, localDb, sync};
 }
