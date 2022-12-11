@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/kwpeters/pouchdb_stops_syncing#readme",
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.17.3",
     "pouchdb": "7.1.1",
     "pouchdb-server": "4.1.0"
   }
